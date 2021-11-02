@@ -8,7 +8,10 @@ class CalcFunctions {
     updateDisplay() { // This will update the display of the output
       this.currentOp.innerText = this.getDisplayNumber(this.currentOperation)
       if (this.operation != null) {
-        this.prevOp.innerText = `${this.getDisplayNumber(this.previousOperation)} ${this.operation}`
+        let asdf = `${this.getDisplayNumber(this.previousOperation)} ${this.operation}`
+        let aaa = asdf.toFixed(2)
+        let bbb = parseFloat(aaa)
+        this.prevOp.innerText = bbb
       } else {
         this.prevOp.innerText = ''
       }
