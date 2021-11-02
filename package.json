@@ -1,7 +1,6 @@
 {
   "name": "calculator",
   "version": "1.0.0",
-  "description": "",
   "main": "node server/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +12,15 @@
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConnorBoulton/Calculator-Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ConnorBoulton/Calculator-Project/issues"
+  },
+  "homepage": "https://github.com/ConnorBoulton/Calculator-Project#readme",
+  "description": ""
 }
