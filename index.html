@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">  
+    <title>Calculator</title>
+</head>
+    <header>
+        <img id="logo-header" src="https://cdn-icons-png.flaticon.com/512/1046/1046283.png">
+        <h1>Welcome to Basic Calc!</h1>
+    </header>
+<body>
+    <div id="toggle-div">
+        <h2 id="toggle-text">Try Dark Theme!</h2>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+            <i></i>
+            <i></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+    
+    <div class="calculator-container">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operation">÷</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operation">x</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operation">+</button>
+        <button class="number">.</button>
+        <button class="number">0</button>
+        <button class="del">DEL</button>
+        <button class="operation">-</button>
+         <button id="all-clear" class="span-two">AC</button>
+         <button id="equals" class="span-two">=</button>
+    </div>
+
+    <script src="/js" defer></script>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <h4>Connor Boulton</h4>
+    <h3>Thank you for checking out my Project!</h3>
+    <a href="https://github.com/ConnorBoulton" class="a-tag">Github</a>
+    </footer>
+</html>
