@@ -1,4 +1,4 @@
-# Descrption
+# Description
 Welcome to Basic Calc! 
 A simple application that can perform division, multiplication, addition, and subrtraction.
 

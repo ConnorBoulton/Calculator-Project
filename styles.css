@@ -111,7 +111,8 @@ h3{
 }
 
 .a-tag{
-    margin-left: 700px
+    margin-left: 700px;
+    color: blue;
 }
 
 .label {
