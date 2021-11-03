@@ -4,6 +4,8 @@ A simple application that can perform division, multiplication, addition, and su
 
 There is also a toggle dark theme that chages the style to a dark background. 
 
+You can also use key strokes to add directly to the function without clicking a button.
+
 # Tech Stack
 
 - HTML 

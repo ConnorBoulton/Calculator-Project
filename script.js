@@ -15,8 +15,7 @@ class CalcFunctions {
     }
   
     numAppend(num) { //This stops from being able to add more than one decimal to the equation 
-      if (num === '.' && this.currentOperation.includes('.')){ 
-        return}
+      if (num === '.' && this.currentOperation.includes('.')) return
       this.currentOperation = this.currentOperation.toString() +num.toString()
     }
   
@@ -103,8 +102,6 @@ const allClearButton = document.getElementById('all-clear')
   
 const calculator = new CalcFunctions(prevOp, currentOp)
 
-
-
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
       calculator.numAppend(button.innerText)
@@ -132,6 +129,135 @@ allClearButton.addEventListener('click', button => {
 deleteButton.addEventListener('click', button => {
     calculator.delete()
     calculator.updateDisplay()
+})
+
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+
+  if(keyName === '1') {
+
+    const num1 = document.getElementById("number-1")
+    calculator.numAppend(num1.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '2') {
+
+    const num2 = document.getElementById("number-2")
+    calculator.numAppend(num2.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '3') {
+
+    const num3 = document.getElementById("number-3")
+    calculator.numAppend(num3.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '4') {
+
+    const num4 = document.getElementById("number-4")
+    calculator.numAppend(num4.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '5') {
+
+    const num5 = document.getElementById("number-5")
+    calculator.numAppend(num5.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '6') {
+
+    const num6 = document.getElementById("number-6")
+    calculator.numAppend(num6.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '7') {
+
+    const num7 = document.getElementById("number-7")
+    calculator.numAppend(num7.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '8') {
+
+    const num8 = document.getElementById("number-8")
+    calculator.numAppend(num8.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '9') {
+
+    const num9 = document.getElementById("number-9")
+    calculator.numAppend(num9.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(keyName === '0') {
+
+    const num0 = document.getElementById("number-0")
+    calculator.numAppend(num0.innerText)
+    calculator.updateDisplay()
+  }
+
+  if(event.ctrlKey && keyName === 'c') {
+    
+    calculator.allClear()
+    calculator.updateDisplay()
+  }
+
+  if(event.keyCode == 8){
+
+    const backspace = document.querySelector('.del')
+    calculator.delete()
+    calculator.updateDisplay()
+  }
+
+  if(event.keyCode == 13){
+
+  const enter = document.getElementById('equals')
+  calculator.calculate()
+  calculator.updateDisplay()
+  }
+
+  if(event.keyCode == 107 || event.keyCode == 187){
+
+  const plusSign = document.getElementById('plus-sign')
+  calculator.operationSelect('+')
+  calculator.updateDisplay()
+  }
+
+  if(event.keyCode == 109 || event.keyCode == 189){
+   
+  const minusSign = document.getElementById('minus-sign')
+  calculator.operationSelect('-')
+  calculator.updateDisplay()  
+  }
+
+  if(event.keyCode == 106 || keyName == "x"){
+
+  const multipySign = document.getElementById('multiply-sign')
+  calculator.operationSelect('x')
+  calculator.updateDisplay()
+  }
+
+  if(event.keyCode == 111 || event.keyCode == 191){
+  
+  const divideSign = document.getElementById('divide-sign')
+  calculator.operationSelect('÷')
+  calculator.updateDisplay()
+  }
+
+  if(event.keyCode == 190 || event.keyCode == 110){
+
+  const decimal = document.getElementById('decimal')
+  calculator.numAppend(decimal.innerText)
+  calculator.updateDisplay()
+  }
 })
 
 const toggleBtn = document.getElementById('checkbox')
