@@ -17,3 +17,9 @@ You can also use key strokes to add directly to the function without clicking a 
 
 # Link
 https://calcpal.herokuapp.com/
+
+# Insallation requirments 
+
+- npm init -y
+- npm i express
+- npm i cors
